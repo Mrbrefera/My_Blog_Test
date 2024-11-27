@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: elenizado\models.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-1"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="elenizado.models.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               elenizado\models.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="F401">
+               <span class="count sev-1">
+                  1
+               </span>
+               <strong>F401:</strong> 'website.models.SiteInfo' imported but unused
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.models.source.html#l5">
+                  <tt><i>5</i> <span class="kn">from</span> <span class="nn">website.models</span> <span class="kn">import</span> <span class="n">SiteInfo</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E231">
+               <span class="count sev-2">
+                  20
+               </span>
+               <strong>E231:</strong> missing whitespace after ','
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="elenizado.models.source.html#l27">
+                  <tt><i>27</i>     <span class="n">categorie</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Categorie</span><span class="p">,</span><span class="n">on_delete</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">CASCADE</span><span class="p">,</span><span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;categorie_publication&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="elenizado.models.source.html#l33">
+                  <tt><i>33</i>     <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="elenizado.models.source.html#l34">
+                  <tt><i>34</i>         <span class="bp">self</span><span class="o">.</span><span class="n">slug</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">((</span><span class="n">slugify</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">titre</span><span class="p">),</span><span class="n">slugify</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">microsecond</span><span class="p">)))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="elenizado.models.source.html#l35">
+                  <tt><i>35</i>         <span class="nb">super</span><span class="p">(</span><span class="n">Publication</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="elenizado.models.source.html#l46">
+                  <tt><i>46</i>     <span class="n">publication</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Publication</span><span class="p">,</span><span class="n">on_delete</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">CASCADE</span><span class="p">,</span><span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;publication_commentaire&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 3 places):</p>
+               
+               <a href="elenizado.models.source.html#l62">
+                  <tt><i>62</i>     <span class="n">commentaire</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Commentaire</span><span class="p">,</span><span class="n">on_delete</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">CASCADE</span><span class="p">,</span><span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;reponse_commentaire&#39;</span><span class="p">,</span><span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="elenizado.models.source.html#l63">
+                  <tt><i>63</i>     <span class="n">nom</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">,</span><span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="elenizado.models.source.html#l78">
+                  <tt><i>78</i>     <span class="n">publication</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Publication</span><span class="p">,</span><span class="n">on_delete</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">CASCADE</span><span class="p">,</span><span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;like_publication&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',' (in 2 places):</p>
+               
+               <a href="elenizado.models.source.html#l99">
+                  <tt><i>99</i>     <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="elenizado.models.source.html#l100">
+                  <tt><i>100</i>         <span class="bp">self</span><span class="o">.</span><span class="n">slug</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">((</span><span class="n">slugify</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">titre</span><span class="p">),</span><span class="n">slugify</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">microsecond</span><span class="p">)))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="elenizado.models.source.html#l101">
+                  <tt><i>101</i>         <span class="nb">super</span><span class="p">(</span><span class="n">Evenement</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="elenizado.models.source.html#l129">
+                  <tt><i>129</i>     <span class="n">titre</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">,</span><span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Missing whitespace after ',':</p>
+               
+               <a href="elenizado.models.source.html#l132">
+                  <tt><i>132</i>     <span class="n">pdf</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">FileField</span><span class="p">(</span><span class="n">upload_to</span><span class="o">=</span><span class="s2">&quot;pdf/textes&quot;</span><span class="p">,</span><span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E225">
+               <span class="count sev-2">
+                  9
+               </span>
+               <strong>E225:</strong> missing whitespace around operator
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.models.source.html#l13">
+                  <tt><i>13</i>     <span class="n">date_update</span><span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">auto_now</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l29">
+                  <tt><i>29</i>     <span class="n">date_update</span><span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">auto_now</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l51">
+                  <tt><i>51</i>     <span class="n">date_update</span><span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">auto_now</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l67">
+                  <tt><i>67</i>     <span class="n">date_update</span><span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">auto_now</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l80">
+                  <tt><i>80</i>     <span class="n">date_update</span><span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">auto_now</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l95">
+                  <tt><i>95</i>     <span class="n">date_update</span><span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">auto_now</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l118">
+                  <tt><i>118</i>     <span class="n">date_update</span><span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">auto_now</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l134">
+                  <tt><i>134</i>     <span class="n">date_update</span><span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">auto_now</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l150">
+                  <tt><i>150</i>     <span class="n">date_update</span><span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateTimeField</span><span class="p">(</span><span class="n">auto_now</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E302">
+               <span class="count sev-2">
+                  9
+               </span>
+               <strong>E302:</strong> expected 2 blank lines, found 1
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.models.source.html#l9">
+                  <tt><i>9</i> <span class="k">class</span> <span class="nc">Categorie</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l23">
+                  <tt><i>23</i> <span class="k">class</span> <span class="nc">Publication</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l45">
+                  <tt><i>45</i> <span class="k">class</span> <span class="nc">Commentaire</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l61">
+                  <tt><i>61</i> <span class="k">class</span> <span class="nc">ReponseCommentaire</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l77">
+                  <tt><i>77</i> <span class="k">class</span> <span class="nc">Like</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l90">
+                  <tt><i>90</i> <span class="k">class</span> <span class="nc">Evenement</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l110">
+                  <tt><i>110</i> <span class="k">class</span> <span class="nc">Cours</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l128">
+                  <tt><i>128</i> <span class="k">class</span> <span class="nc">Textes</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l144">
+                  <tt><i>144</i> <span class="k">class</span> <span class="nc">Video</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E117">
+               <span class="count sev-2">
+                  8
+               </span>
+               <strong>E117:</strong> over-indented
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.models.source.html#l21">
+                  <tt><i>21</i>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nom</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l43">
+                  <tt><i>43</i>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">titre</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l59">
+                  <tt><i>59</i>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nom</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l88">
+                  <tt><i>88</i>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">publication</span><span class="o">.</span><span class="n">titre</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l108">
+                  <tt><i>108</i>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">titre</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l126">
+                  <tt><i>126</i>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">titre</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l142">
+                  <tt><i>142</i>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">titre</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l158">
+                  <tt><i>158</i>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">titre</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  8
+               </span>
+               <strong>E501:</strong> line too long (106 > 79 characters)
+               
+                  (and 6 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Line too long (106 > 79 characters):</p>
+               
+               <a href="elenizado.models.source.html#l27">
+                  <tt><i>27</i>     <span class="n">categorie</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Categorie</span><span class="p">,</span><span class="n">on_delete</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">CASCADE</span><span class="p">,</span><span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;categorie_publication&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (87 > 79 characters):</p>
+               
+               <a href="elenizado.models.source.html#l34">
+                  <tt><i>34</i>         <span class="bp">self</span><span class="o">.</span><span class="n">slug</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">((</span><span class="n">slugify</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">titre</span><span class="p">),</span><span class="n">slugify</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">microsecond</span><span class="p">)))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (112 > 79 characters):</p>
+               
+               <a href="elenizado.models.source.html#l46">
+                  <tt><i>46</i>     <span class="n">publication</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Publication</span><span class="p">,</span><span class="n">on_delete</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">CASCADE</span><span class="p">,</span><span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;publication_commentaire&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (118 > 79 characters):</p>
+               
+               <a href="elenizado.models.source.html#l62">
+                  <tt><i>62</i>     <span class="n">commentaire</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Commentaire</span><span class="p">,</span><span class="n">on_delete</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">CASCADE</span><span class="p">,</span><span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;reponse_commentaire&#39;</span><span class="p">,</span><span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (105 > 79 characters):</p>
+               
+               <a href="elenizado.models.source.html#l78">
+                  <tt><i>78</i>     <span class="n">publication</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Publication</span><span class="p">,</span><span class="n">on_delete</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">CASCADE</span><span class="p">,</span><span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;like_publication&#39;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (87 > 79 characters):</p>
+               
+               <a href="elenizado.models.source.html#l100">
+                  <tt><i>100</i>         <span class="bp">self</span><span class="o">.</span><span class="n">slug</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">((</span><span class="n">slugify</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">titre</span><span class="p">),</span><span class="n">slugify</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">microsecond</span><span class="p">)))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (80 > 79 characters):</p>
+               
+               <a href="elenizado.models.source.html#l131">
+                  <tt><i>131</i>     <span class="n">image</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ImageField</span><span class="p">(</span><span class="n">upload_to</span><span class="o">=</span><span class="s2">&quot;textes/image&quot;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;cours/pdf.png&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (81 > 79 characters):</p>
+               
+               <a href="elenizado.models.source.html#l147">
+                  <tt><i>147</i>     <span class="n">image</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ImageField</span><span class="p">(</span><span class="n">upload_to</span><span class="o">=</span><span class="s2">&quot;video/image&quot;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;video/video.png&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E303">
+               <span class="count sev-2">
+                  2
+               </span>
+               <strong>E303:</strong> too many blank lines (2)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.models.source.html#l38">
+                  <tt><i>38</i>     <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l161">
+                  <tt><i>161</i>     <span class="nd">@property</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W293">
+               <span class="count sev-2">
+                  2
+               </span>
+               <strong>W293:</strong> blank line contains whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.models.source.html#l36">
+                  <tt><i>36</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.models.source.html#l37">
+                  <tt><i>37</i>  </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E722">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E722:</strong> do not use bare 'except'
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.models.source.html#l166">
+                  <tt><i>166</i>         <span class="k">except</span><span class="p">:</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W291">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>W291:</strong> trailing whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.models.source.html#l167">
+                  <tt><i>167</i>             <span class="k">pass</span> </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W391">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>W391:</strong> blank line at end of file
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.models.source.html#l168">
+                  <tt><i>168</i> &nbsp;</tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>
